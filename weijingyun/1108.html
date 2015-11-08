@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JqueryExercise</title>
+</head>
+<body>
+<!-- 由于第一次，所以代码不是很难 -->
+<div id="yunzhi">
+	hello,云智！
+</div>
+<button id="button1">双向</button>
+<button id="button2">显示</button>
+<button id="button3">隐藏</button>
+</body>
+</html>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  		$("#button3").click(function(){
+    		$("#yunzhi").hide();
+    	});
+    	$("#button2").click(function(){
+    		$("#yunzhi").show();
+    	});
+    	$("#button1").click(function(){
+    		$("#yunzhi").toggle();
+    	});
+    
+}); 
+</script>>
