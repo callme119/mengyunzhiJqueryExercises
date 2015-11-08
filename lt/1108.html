@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1108</title>
+</head>
+<body>
+    <div id="yunzhi">
+        hello,云智！
+    </div>
+    <button id="button1">双向</button>
+    <button id="button2">隐藏</button>
+    <button id="button3">显示</button>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#yunzhi").toggle();
+            });
+            $("#button2").click(function(){
+                $("#yunzhi").hide();
+            });
+            $("#button3").click(function(){
+                $("#yunzhi").show();
+            });
+    });
+    </script>
+</body>
+</html>
