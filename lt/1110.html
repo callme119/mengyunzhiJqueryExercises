@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1110</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("#test1").text("Hello world!");
+          });
+          $("#btn2").click(function(){
+            $("#test2").html("<b>Hello world!</b>");
+          });
+          $("#btn3").click(function(){
+            $("#test3").val("hello mengyunzhi!");
+          });
+          $("btn4").click(function(){
+            $("#test3").attr("value","Hello mengyunzhi");
+          });
+          $("#btn5").click(function(){
+            alert($("#test3").attr("value"));
+          });
+        });
+    </script>
+</head>
+<body>
+    <div id="test1">This is a paragraph.</div>
+    <div id="test2">This is another paragraph.</div>
+    <div>
+        tittle:<input type="text" id="test3" value="mengyunzhi">
+    </div>
+    <button id="btn1">set text</button>
+    <button id="btn2">set html</button>
+    <button id="btn3">set value</button>
+    <button id="btn4">attr value</button>
+    <button id="btn5">alert input</button>
+</body>
+</html>
