@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>11.10</title>
+	<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<p id="test1">This is a paragraph.</p>
+	<p id="test2">This is another paragraph.</p>
+	<p>title:<input type="text" id="test3" value="mengyunzhi"></p>
+	<button id="button1">set text</button>
+	<button id="button2">set html</button>
+	<button id="button3">set value</button>
+	<button id="button4">attr value</button>
+	<button id="button5">alert input</button>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#test1").text("Hello world!");
+  });
+  $("#button2").click(function(){
+    $("#test2").html("<b>Hello world!</b>");
+  });
+  $("#button5").click(function(){
+  	alert($("#test3").attr("value"));sss
+     //alert($("#test3").val());
+  });
+  $("#button3").click(function(){
+    $("#test3").val("Hello mengyunzhi!");
+  });
+  $("#button4").click(function(){
+     $("#test3").attr("value","Hello mengyunzhi!");
+  });
+});
+</script>
